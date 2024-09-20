@@ -1,0 +1,17 @@
+# Set the user locale to UK
+Set-WinSystemLocale -SystemLocale "en-GB"
+
+# Set the user language to UK English
+Set-WinUILanguageOverride -Language "en-GB"
+
+# Set the input language (keyboard) to UK
+Set-WinUserLanguageList -LanguageList "en-GB" -Force
+
+# Set the user location to UK
+Set-Culture "en-GB"
+
+# Set the time zone to London (UK)
+Set-TimeZone -Id "GMT Standard Time"
+
+# Confirm settings have been applied
+Write-Host "All regional settings have been set to UK."
